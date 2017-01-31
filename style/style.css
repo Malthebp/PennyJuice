@@ -1,14 +1,17 @@
+html {
+	font-size: 12px;
+}
 * {
-	margin: 0px;
-	padding: 0px;
+    margin: 0px;
+    padding: 0px;
 }
 
 body {
-	font-family: 'Lato', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 .active {
-	text-decoration: underline;
+    text-decoration: underline;
 }
 a {
 	color: green;
@@ -24,47 +27,53 @@ h2 {
 }
 
 .container {
-	max-width: 1100px;
-	width: 100%;
-	margin: 0 auto;
-	display: table;
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    display: table;
 }
+
 
 /*Navigation*/
+
 nav {
-	width: 100%;
-	font-size: 1.8rem;
-	padding: 25px 0px;
-	margin: 0 auto;
-	display: table;
-	background-color: white;
-	position: fixed;
-	box-shadow: 0px 0px 14px 0px black;
-	z-index: 10;
-}
-nav ul {
-	float:right;
-	font-size: 1.6rem;
-	margin-top:5px;
-}
-nav ul li, .brandName {
-	display: inline-block;
-	list-style-type: none;
-	margin-right: 25px
-}
-nav a {
-	text-decoration: none;
-	color: black;
-}
-nav ul li a:hover {
-	text-decoration: underline;	
+    width: 100%;
+    font-size: 1.6rem;
+    padding: 25px 0px;
+    margin: 0 auto;
+    display: table;
+    background-color: white;
+    position: fixed;
+    box-shadow: 0px 0px 14px 0px black;
+    z-index: 2;
 }
 
-.brandName h1{
-	font-family: 'Dancing Script', cursive;
-	float:left;
-	font-size: 1.8rem;
-	font-weight: normal;
+nav ul {
+    float: right;
+    font-size: 1.6em;
+}
+
+nav ul li,
+.brandName {
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 25px
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.brandName h1 {
+    font-family: 'Dancing Script', cursive;
+    float: left;
+    font-size: 1.8rem;
+    font-weight: normal;
 }
 
 .brandName img {
@@ -73,72 +82,110 @@ nav ul li a:hover {
 }
 
 #toggle {
-	display:none;
+    display: none;
 }
 
-button#toggle{
-	background-color: white;
-	border: 0px;
-	cursor: pointer;
+
+/*About Page*/
+
+.about {
+    display: flex;
+    justify-content: space-around;
 }
 
-.icon-bar{
+.box {
+    height: 350px;
+    width: 300px;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px 5px #888888;
+}
+
+.box h3 {
+    font-family: Lato;
+    text-align: center;
+    margin-top: 10px;
+    color: black;
+    font-size: 1.6em;
+}
+
+.box p {
+    color: black;
+    text-align: left;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+
+/*Contact Page*/
+
+.googlemaps {
+    margin-left: 600px;
+}
+
+#contact aside {
+    float: left;
+}
+
+button#toggle {
+    background-color: white;
+    border: 0px;
+    cursor: pointer;
+}
+
+.icon-bar {
     height: 4px;
     width: 22px;
     margin: 4px;
     background: black;
     display: block;
 }
-@media only screen and (max-width: 768px){
-	.brandName h1 {
-		float: left;
-		padding-bottom: 5px;'
-	}
 
-	.brandName {
-		margin-left:10px;
-	}
-	nav {
-	}
-
-	nav ul li {
-		display: block;
-
-	}
-	nav ul {
-		float: none;
-		display: none;
-		text-align: center;
-	}
-	#toggle {
-		display: block;
-		float: right;
-		margin-top: 10px;
-		margin-right: 10px;
-	}
+@media only screen and (max-width: 768px) {
+    .brandName h1 {
+        float: left;
+        padding-bottom: 5px;
+    }
+    .brandName {
+        margin-left: 10px;
+    }
+    nav ul li {
+        display: block;
+    }
+    nav ul {
+        float: none;
+        display: none;
+        text-align: center;
+    }
+    #toggle {
+        display: block;
+        float: right;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
 }
 
 #home {
-	background: url('../image/children.jpg') no-repeat;
-	background-size: cover;
-	height: 90vh;
-	width: 100%;
-	filter: brightness(110%);
-	display: flex;
+    background: url('../image/children.jpg') no-repeat;
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+    filter: brightness(110%);
+    display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
-@media only screen and (max-width: 600px){
-	#home {
-		background-position: -150px;
-	}
+@media only screen and (max-width: 600px) {
+    #home {
+        background-position: -150px;
+    }
 }
 
 #home div {
-	padding: 30px;
-	background-color: rgba(255, 177, 66, 0.6);
-	font-size: 1.5rem;
+    padding: 30px;
+    background-color: rgba(255, 177, 66, 0.6);
+    font-size: 1.5rem;
 }
 
 form {
@@ -149,46 +196,48 @@ form {
 }
 
 form label {
-	display: block;
+    display: block;
 }
 
 form input {
-	width: 100%;
-	padding: 10px;
+    width: 100%;
+    padding: 10px;
 }
 
 form div {
-	margin: 10px 0px;
+    margin: 10px 0px;
 }
 
 form h3 {
-	margin-top: 10px;
+    margin-top: 10px;
 }
-
 
 form ul {
-	margin-left: 40px;
+    margin-left: 40px;
 }
-.form-horizontal div label, .form-horizontal div input{
-	display: inline-block;
+
+.form-horizontal div label,
+.form-horizontal div input {
+    display: inline-block;
 }
 
 .form-horizontal div label {
-	width: 65%;
-	text-align: right;
+    width: 65%;
+    text-align: right;
 }
+
 .form-horizontal div input {
-	width: 34%;
+    width: 34%;
 }
 
 .btn-submit {
-	display: block;
-	padding: 10px 15px;
-	background-color: rgb(255, 177, 66);
-	border: 1px solid rgb(255, 177, 75);
-	cursor: pointer;
+    display: block;
+    padding: 10px 15px;
+    background-color: rgb(255, 177, 66);
+    border: 1px solid rgb(255, 177, 75);
+    cursor: pointer;
 }
 
 .btn-submit:hover {
-	background-color: rgb(245, 190, 118);
+    background-color: rgb(245, 190, 118);
 }

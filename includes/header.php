@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 	<title>Penny Juice - Juiceboxes for kids</title>
