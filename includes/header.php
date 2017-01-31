@@ -21,7 +21,7 @@
 					<span class="icon-bar"></span>
 				</button>							
 				<ul>
-					<li><a class="#active" href="#about" title="About Penny Juice">About</a></li>
+					<li><a href="#about" title="About Penny Juice">About</a></li>
 					<li><a href="#buy" title="Buy Juiceboxes at Penny Juice">Buy</a></li>
 					<li><a href="#contact" title="Contact Penny Juice">Contact</a></li>
 				</ul>

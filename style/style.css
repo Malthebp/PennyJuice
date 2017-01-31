@@ -7,6 +7,9 @@ body {
 	font-family: 'Lato', sans-serif;
 }
 
+.active {
+	text-decoration: underline;
+}
 h2 {
 	margin-top: 25px;
 	margin-bottom: 25px;
@@ -38,7 +41,8 @@ nav {
 }
 nav ul {
 	float:right;
-
+	font-size: 1.6rem;
+	margin-top:5px;
 }
 nav ul li, .brandName {
 	display: inline-block;
