@@ -13,12 +13,21 @@ body {
 .active {
     text-decoration: underline;
 }
+
 a {
 	color: green;
 }
+h1 {
+    font-size: 2.3rem;
+}
+
+p, a, li {
+    font-size: 1.3rem;
+}
+
 h2 {
-	margin-top: 25px;
-	margin-bottom: 25px;
+	margin-top: 50px;
+	margin-bottom: 50px;
 	margin-right: 5%;
 	margin-left: 5%;
 	font-size: 2rem;
@@ -63,17 +72,19 @@ nav ul li,
 nav a {
     text-decoration: none;
     color: black;
+    font-size: 1.6rem;
 }
 
 nav ul li a:hover {
     text-decoration: underline;
 }
 
-.brandName h1 {
+.brandName h1  a{
     font-family: 'Dancing Script', cursive;
     float: left;
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: normal;
+    margin-top:5px;
 }
 
 .brandName img {
@@ -94,11 +105,12 @@ nav ul li a:hover {
 }
 
 .box {
-    height: 350px;
-    width: 300px;
+    width: calc(100% / 3);
     background-color: white;
     border: 1px solid black;
     box-shadow: 5px 5px 5px 5px #888888;
+    padding: 15px;
+    margin: 0 auto;
 }
 
 .box h3 {
@@ -116,15 +128,39 @@ nav ul li a:hover {
     margin-left: 10px;
 }
 
+@media only screen and (max-width:800px){
+    .about {
+        display: block;
+    }
+    .box {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .box{
+        width: 90%;
+    }
+}
 
 /*Contact Page*/
 
-.googlemaps {
-    margin-left: 600px;
-}
 
 #contact aside {
     float: left;
+    margin: 0px 15px;
+}
+
+#contact section {
+    max-width:700px;
+    margin: 0 auto;
+}
+
+.googlemaps div {
+    width: 100%;
+    max-width: 300px;
+    display: table;
+    margin-bottom: 100px;
 }
 
 button#toggle {
@@ -195,6 +231,12 @@ form {
 	width: 100%;
 }
 
+@media only screen and (max-width: 450px){
+    form {
+        max-width: 250px;
+    }
+}
+
 form label {
     display: block;
 }
@@ -206,6 +248,8 @@ form input {
 
 form div {
     margin: 10px 0px;
+    display: table;
+    width: 100%;
 }
 
 form h3 {
@@ -222,12 +266,13 @@ form ul {
 }
 
 .form-horizontal div label {
-    width: 65%;
+    width: 50%;
     text-align: right;
+    padding-right:5px;
 }
 
 .form-horizontal div input {
-    width: 34%;
+    width: 40%;
 }
 
 .btn-submit {
@@ -240,4 +285,23 @@ form ul {
 
 .btn-submit:hover {
     background-color: rgb(245, 190, 118);
+}
+
+footer h3{
+    padding: 25px 0px;
+    text-align: center;
+    display: table;
+    width: 100%;
+}
+
+footer {
+    margin: 25px 0px 0px;
+     box-shadow: 0px 0px 14px 0px black;
+}
+
+.success {
+    padding: 10px;
+    background-color: #54e054;
+    color: white;
+    font-size: 1.3rem;
 }

@@ -7,6 +7,7 @@
         </div>
     </section>
     <section id="about" class="container">
+        <h2>About</h2>
         <div class="about">
             <article class="box">
                 <h3>Who is Penny Juice?</h3>
@@ -26,7 +27,7 @@
     </section>
     <section id="buy" class="container">
         <h2>Buy</h2>
-        <form action="#" method="post">
+        <form action="?thanks#buy" method="post">
             <p>Please fill out your personal information and what items you want to buy.</p>
             <p>We will process your order as fast as possible, but it will be shipped in minimum 3 days.</p>
             <p>The prices:</p>
@@ -35,6 +36,11 @@
                 <li>Per gallon: $3.29</li>
                 <li>Per ounce: 2.5 cents</li>
             </ul>
+            <?php
+                if(isset($_GET['thanks'])){
+                    echo "<div class=\"success\">Thanks for ordering!</div>";
+                }
+            ?>
             <h3>Personal information</h3>
             <div>
                 <label for="name">Your Name *</label>
@@ -69,21 +75,24 @@
             <input type="submit" class="btn-submit" value="Order"> </form>
     </section>
     <section id="contact" class="container">
-        <aside>
-            <p>Email:</p> <a href="pennyjuice@hotmail.com" <p>pennyjuice@hotmail.com</p>
-        </p></a>
-            <br>
-            <p>Tel:
-                <br> (763) 493-5023</p>
-            <br>
-            <p>Adress:</p>
-            <p>Davenport, IA 52807</p>
-        </aside>
-        <div class="googlemaps">
-            <?php
-        include 'includes/googlemaps.php';
-        ?>
-        </div>
+    <h2>Contact</h2>
+        <section>
+            <aside>
+                <p>Email:</p> <a href="pennyjuice@hotmail.com" <p>pennyjuice@hotmail.com</p>
+            </p></a>
+                <br>
+                <p>Tel:
+                    <br> (763) 493-5023</p>
+                <br>
+                <p>Adress:</p>
+                <p>Davenport, IA 52807</p>
+            </aside>
+            <div class="googlemaps">
+                <?php
+            include 'includes/googlemaps.php';
+            ?>
+            </div>     
+        </section>
     </section>
     <?php 
 	include 'includes/footer.php';
