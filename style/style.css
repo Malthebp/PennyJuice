@@ -2,3 +2,14 @@
 	max-width: 1100px;
 	margin: 0 auto;
 }
+
+
+/*Navigation*/
+
+nav ul li {
+	display: inline-block;
+	list-style-type: none;
+}
+nav ul li a {
+	text-decoration: none;
+}
