@@ -41,41 +41,41 @@
                     echo "<div class=\"success\">Thanks for ordering!</div>";
                 }
             ?>
-            <h3>Personal information</h3>
-            <div>
-                <label for="name">Your Name *</label>
-                <input type="text" name="name" id="name" placeholder="ex. John Doe" value=""> </div>
-            <div>
-                <label for="email">Your E-mail *</label>
-                <input type="email" name="email" id="email" placeholder="ex. John@Doe.com" value=""> </div>
-            <div>
-                <label for="phone">Your Phone number *</label>
-                <input type="number" name="phone" id="phone" placeholder="ex. 22 22 22 22" value=""> </div>
-            <div>
-                <label for="address">Your Address *</label>
-                <input type="text" name="address" id="address" placeholder="ex. johndoe street 123" value=""> </div>
-            <div>
-                <label for="postal">Your Postal code*</label>
-                <input type="number" name="postal" id="postal" placeholder="ex. 9999" value=""> </div>
-            <h3>Choose items</h3>
-            <section class="form-horizontal">
+                <h3>Personal information</h3>
                 <div>
-                    <label for="apple">Apple</label>
-                    <input type="number" name="apple" id="apple"> </div>
+                    <label for="name">Your Name *</label>
+                    <input type="text" name="name" id="name" placeholder="ex. John Doe" value=""> </div>
                 <div>
-                    <label for="Wgrape">White Grape</label>
-                    <input type="number" name="Wgrape" id="Wgrape"> </div>
+                    <label for="email">Your E-mail *</label>
+                    <input type="email" name="email" id="email" placeholder="ex. John@Doe.com" value=""> </div>
                 <div>
-                    <label for="SBanana">Strawberry Banana</label>
-                    <input type="number" name="SBanana" id="SBanana"> </div>
+                    <label for="phone">Your Phone number *</label>
+                    <input type="number" name="phone" id="phone" placeholder="ex. 22 22 22 22" value=""> </div>
                 <div>
-                    <label for="Cherry">Cherry (Color free)</label>
-                    <input type="number" name="Cherry" id="Cherry"> </div>
-            </section>
-            <input type="submit" class="btn-submit" value="Order"> </form>
+                    <label for="address">Your Address *</label>
+                    <input type="text" name="address" id="address" placeholder="ex. johndoe street 123" value=""> </div>
+                <div>
+                    <label for="postal">Your Postal code*</label>
+                    <input type="number" name="postal" id="postal" placeholder="ex. 9999" value=""> </div>
+                <h3>Choose items</h3>
+                <section class="form-horizontal">
+                    <div>
+                        <label for="apple">Apple</label>
+                        <input type="number" name="apple" id="apple"> </div>
+                    <div>
+                        <label for="Wgrape">White Grape</label>
+                        <input type="number" name="Wgrape" id="Wgrape"> </div>
+                    <div>
+                        <label for="SBanana">Strawberry Banana</label>
+                        <input type="number" name="SBanana" id="SBanana"> </div>
+                    <div>
+                        <label for="Cherry">Cherry (Color free)</label>
+                        <input type="number" name="Cherry" id="Cherry"> </div>
+                </section>
+                <input type="submit" class="btn-submit" value="Order"> </form>
     </section>
     <section id="contact" class="container">
-    <h2>Contact</h2>
+        <h2>Contact</h2>
         <section>
             <aside>
                 <p>Email:</p> <a href="pennyjuice@hotmail.com" <p>pennyjuice@hotmail.com</p>
@@ -91,7 +91,7 @@
                 <?php
             include 'includes/googlemaps.php';
             ?>
-            </div>     
+            </div>
         </section>
     </section>
     <?php 

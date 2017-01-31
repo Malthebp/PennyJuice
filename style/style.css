@@ -1,6 +1,7 @@
 html {
-	font-size: 12px;
+    font-size: 12px;
 }
+
 * {
     margin: 0px;
     padding: 0px;
@@ -15,24 +16,27 @@ body {
 }
 
 a {
-	color: green;
+    color: green;
 }
+
 h1 {
     font-size: 2.3rem;
 }
 
-p, a, li {
+p,
+a,
+li {
     font-size: 1.3rem;
 }
 
 h2 {
-	margin-top: 50px;
-	margin-bottom: 50px;
-	margin-right: 5%;
-	margin-left: 5%;
-	font-size: 2rem;
-	padding-left: 25px;
-	border-bottom: 2px solid green;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 5%;
+    margin-left: 5%;
+    font-size: 2rem;
+    padding-left: 25px;
+    border-bottom: 2px solid green;
 }
 
 .container {
@@ -79,17 +83,17 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-.brandName h1  a{
+.brandName h1 a {
     font-family: 'Dancing Script', cursive;
     float: left;
     font-size: 2rem;
     font-weight: normal;
-    margin-top:5px;
+    margin-top: 5px;
 }
 
 .brandName img {
-	max-width: 25px;
-	margin-bottom: -3px;
+    max-width: 25px;
+    margin-bottom: -3px;
 }
 
 #toggle {
@@ -102,6 +106,7 @@ nav ul li a:hover {
 .about {
     display: flex;
     justify-content: space-around;
+    padding-top: 30px;
 }
 
 .box {
@@ -128,7 +133,7 @@ nav ul li a:hover {
     margin-left: 10px;
 }
 
-@media only screen and (max-width:800px){
+@media only screen and (max-width:800px) {
     .about {
         display: block;
     }
@@ -137,31 +142,40 @@ nav ul li a:hover {
     }
 }
 
-@media only screen and (max-width: 450px){
-    .box{
+@media only screen and (max-width: 450px) {
+    .box {
         width: 90%;
+    }
+    .googlemaps {
+        display: block;
+        margin-left: 20px;
     }
 }
 
-/*Contact Page*/
 
+/* buy mellemrum til About */
+
+#buy {
+    padding-top: 200px;
+}
+
+
+/*Contact Page*/
 
 #contact aside {
     float: left;
     margin: 0px 15px;
+    width: 200px;
 }
 
 #contact section {
-    max-width:700px;
+    max-width: 700px;
+    height: 400px;
     margin: 0 auto;
+    padding-top: 60px;
 }
 
-.googlemaps div {
-    width: 100%;
-    max-width: 300px;
-    display: table;
-    margin-bottom: 100px;
-}
+.googlemaps div {}
 
 button#toggle {
     background-color: white;
@@ -219,19 +233,25 @@ button#toggle {
 }
 
 #home div {
-    padding: 30px;
+    padding: 20px 100px;
     background-color: rgba(255, 177, 66, 0.6);
     font-size: 1.5rem;
+    margin-top: 100px;
+}
+
+#home div p {
+    color: white;
+    font-size: 1.2em;
 }
 
 form {
-	max-width: 400px;
-	margin: 0 auto;
-	padding: 0px 15px;
-	width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 0px 15px;
+    width: 100%;
 }
 
-@media only screen and (max-width: 450px){
+@media only screen and (max-width: 450px) {
     form {
         max-width: 250px;
     }
@@ -262,7 +282,6 @@ form ul {
 
 form input[type="submit"] {
     -webkit-appearance: none;
-
 }
 
 .form-horizontal div label,
@@ -273,7 +292,7 @@ form input[type="submit"] {
 .form-horizontal div label {
     width: 50%;
     text-align: right;
-    padding-right:5px;
+    padding-right: 5px;
 }
 
 .form-horizontal div input {
@@ -292,7 +311,7 @@ form input[type="submit"] {
     background-color: rgb(245, 190, 118);
 }
 
-footer h3{
+footer h3 {
     padding: 25px 0px;
     text-align: center;
     display: table;
@@ -301,7 +320,7 @@ footer h3{
 
 footer {
     margin: 25px 0px 0px;
-     box-shadow: 0px 0px 14px 0px black;
+    box-shadow: 0px 0px 14px 0px black;
 }
 
 .success {
