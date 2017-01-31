@@ -13,13 +13,18 @@
 		<nav> <!-- navigation -->
 			<div class="container"> <!-- container -->
 				<div class="brandName">
-					<a href="#home">Penny Juice</a>
+					<h1><a href="#home">Penny Juice</a></h1>
 				</div>
+				<button type="button" id="toggle">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>							
 				<ul>
 					<li><a class="#active" href="#about" title="About Penny Juice">About</a></li>
 					<li><a href="#buy" title="Buy Juiceboxes at Penny Juice">Buy</a></li>
 					<li><a href="#contact" title="Contact Penny Juice">Contact</a></li>
-				</ul>							
+				</ul>
 			</div> <!-- /container -->
 		</nav> <!-- /navigation -->
 	</header><!-- /header -->

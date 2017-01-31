@@ -3,13 +3,18 @@
 	padding: 0px;
 }
 
-section {
-	display: table;
-	width: 100%;
-}
-
 body {
 	font-family: 'Lato', sans-serif;
+}
+
+h2 {
+	margin-top: 25px;
+	margin-bottom: 25px;
+	margin-right: 5%;
+	margin-left: 5%;
+	font-size: 2rem;
+	padding-left: 25px;
+	border-bottom: 2px solid black;
 }
 
 .container {
@@ -29,6 +34,7 @@ nav {
 	background-color: white;
 	position: fixed;
 	box-shadow: 0px 0px 14px 0px black;
+	z-index: 10;
 }
 nav ul {
 	float:right;
@@ -47,24 +53,128 @@ nav ul li a:hover {
 	text-decoration: underline;	
 }
 
-.brandName {
+.brandName h1{
 	font-family: 'Dancing Script', cursive;
 	float:left;
+	font-size: 1.8rem;
+	font-weight: normal;
 }
 
-.home {
-    text-align: center;
-    font-family: 'Lato';
-    font-size: 6em;
-    margin-top: 200px;
-    word-spacing: 200px;
+#toggle {
+	display:none;
 }
 
+button#toggle{
+	background-color: white;
+	border: 0px;
+	cursor: pointer;
+}
 
-.coin {
-    width: 100px;
+.icon-bar{
+    height: 4px;
+    width: 22px;
+    margin: 4px;
+    background: black;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    
+}
+@media only screen and (max-width: 768px){
+	.brandName h1 {
+		float: left;
+		padding-bottom: 5px;'
+	}
+
+	.brandName {
+		margin-left:10px;
+	}
+	nav {
+	}
+
+	nav ul li {
+		display: block;
+
+	}
+	nav ul {
+		float: none;
+		display: none;
+		text-align: center;
+	}
+	#toggle {
+		display: block;
+		float: right;
+		margin-top: 10px;
+		margin-right: 10px;
+	}
+}
+
+#home {
+	background: url('../image/children.jpg') no-repeat;
+	background-size: cover;
+	height: 90vh;
+	width: 100%;
+	filter: brightness(110%);
+	display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+@media only screen and (max-width: 600px){
+	#home {
+		background-position: -150px;
+	}
+}
+
+#home div {
+	padding: 30px;
+	background-color: rgba(255, 177, 66, 0.6);
+	font-size: 1.5rem;
+}
+
+form {
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+form label {
+	display: block;
+}
+
+form input {
+	width: 100%;
+	padding: 10px;
+}
+
+form div {
+	margin: 10px 0px;
+}
+
+form h3 {
+	margin-top: 10px;
+}
+
+
+form ul {
+	margin-left: 40px;
+}
+.form-horizontal div label, .form-horizontal div input{
+	display: inline-block;
+}
+
+.form-horizontal div label {
+	width: 65%;
+	text-align: right;
+}
+.form-horizontal div input {
+	width: 34%;
+}
+
+.btn-submit {
+	display: block;
+	padding: 10px 15px;
+	background-color: rgb(255, 177, 66);
+	border: 1px solid rgb(255, 177, 75);
+	cursor: pointer;
+}
+
+.btn-submit:hover {
+	background-color: rgb(245, 190, 118);
 }
