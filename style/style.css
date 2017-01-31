@@ -10,6 +10,9 @@ body {
 .active {
 	text-decoration: underline;
 }
+a {
+	color: green;
+}
 h2 {
 	margin-top: 25px;
 	margin-bottom: 25px;
@@ -17,7 +20,7 @@ h2 {
 	margin-left: 5%;
 	font-size: 2rem;
 	padding-left: 25px;
-	border-bottom: 2px solid black;
+	border-bottom: 2px solid green;
 }
 
 .container {
@@ -62,6 +65,11 @@ nav ul li a:hover {
 	float:left;
 	font-size: 1.8rem;
 	font-weight: normal;
+}
+
+.brandName img {
+	max-width: 25px;
+	margin-bottom: -3px;
 }
 
 #toggle {
@@ -136,6 +144,8 @@ button#toggle{
 form {
 	max-width: 400px;
 	margin: 0 auto;
+	padding: 0px 15px;
+	width: 100%;
 }
 
 form label {

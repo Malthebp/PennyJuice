@@ -13,7 +13,7 @@
 		<nav> <!-- navigation -->
 			<div class="container"> <!-- container -->
 				<div class="brandName">
-					<h1><a href="#home">Penny Juice</a></h1>
+					<h1><a href="#home">Penny Juice <img src="image/juicebox.png"></a></h1>
 				</div>
 				<button type="button" id="toggle">
 					<span class="icon-bar"></span>
