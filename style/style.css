@@ -1,55 +1,66 @@
 * {
-	margin: 0px;
-	padding: 0px;
+    margin: 0px;
+    padding: 0px;
 }
 
 section {
-	display: table;
-	width: 100%;
+    display: table;
+    width: 100%;
 }
 
 body {
-	font-family: 'Lato', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 .container {
-	max-width: 1100px;
-	width: 100%;
-	margin: 0 auto;
-	display: table;
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    display: table;
 }
+
 
 /*Navigation*/
-nav {
-	width: 100%;
-	font-size: 1.8rem;
-	padding: 25px 0px;
-	margin: 0 auto;
-	display: table;
-	background-color: white;
-	position: fixed;
-	box-shadow: 0px 0px 14px 0px black;
-}
-nav ul {
-	float:right;
 
+nav {
+    width: 100%;
+    font-size: 1.8rem;
+    padding: 25px 0px;
+    margin: 0 auto;
+    display: table;
+    background-color: white;
+    position: fixed;
+    box-shadow: 0px 0px 14px 0px black;
+    z-index: 2;
 }
-nav ul li, .brandName {
-	display: inline-block;
-	list-style-type: none;
-	margin-right: 25px
+
+nav ul {
+    float: right;
 }
+
+nav ul li,
+.brandName {
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 25px
+}
+
 nav a {
-	text-decoration: none;
-	color: black;
+    text-decoration: none;
+    color: black;
 }
+
 nav ul li a:hover {
-	text-decoration: underline;	
+    text-decoration: underline;
 }
 
 .brandName {
-	font-family: 'Dancing Script', cursive;
-	float:left;
+    font-family: 'Dancing Script', cursive;
+    float: left;
+}
+
+section {
+    height: 700px;
 }
 
 .home {
@@ -60,11 +71,51 @@ nav ul li a:hover {
     word-spacing: 200px;
 }
 
-
 .coin {
     width: 100px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    
+}
+
+
+/*About Page*/
+
+.about {
+    display: flex;
+    justify-content: space-around;
+}
+
+.box {
+    height: 350px;
+    width: 300px;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px 5px #888888;
+}
+
+.box h3 {
+    font-family: Lato;
+    text-align: center;
+    margin-top: 10px;
+    color: black;
+    font-size: 1.6em;
+}
+
+.box p {
+    color: black;
+    text-align: left;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+
+/*Contact Page*/
+
+.googlemaps {
+    margin-left: 600px;
+}
+
+#contact aside {
+    float: left;
 }
