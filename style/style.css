@@ -3,6 +3,11 @@
 	padding: 0px;
 }
 
+section {
+	display: table;
+	width: 100%;
+}
+
 body {
 	font-family: 'Lato', sans-serif;
 }
@@ -14,7 +19,6 @@ body {
 	display: table;
 }
 
-<<<<<<< HEAD
 /*Navigation*/
 nav {
 	width: 100%;
@@ -46,7 +50,8 @@ nav ul li a:hover {
 .brandName {
 	font-family: 'Dancing Script', cursive;
 	float:left;
-=======
+}
+
 .home {
     text-align: center;
     font-family: 'Lato';
@@ -57,11 +62,9 @@ nav ul li a:hover {
 
 
 .coin {
-    position: absolute;
     width: 100px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     
->>>>>>> 00fb6aa86782dac547097dba15775f7d21d9b236
 }
