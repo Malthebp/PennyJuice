@@ -260,6 +260,11 @@ form ul {
     margin-left: 40px;
 }
 
+form input[type="submit"] {
+    -webkit-appearance: none;
+
+}
+
 .form-horizontal div label,
 .form-horizontal div input {
     display: inline-block;
