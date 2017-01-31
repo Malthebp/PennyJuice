@@ -6,10 +6,8 @@
 
 </section>
 <section id="buy" class="container">
-
 </section>
 <section id="contact" class="container">
-	
 </section>
 
 
